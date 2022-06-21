@@ -52,7 +52,7 @@
         <li><h1>SOFTWARE LAB</h1></li>
         <li><input id="inp" type="text"> </li>
 
-        <li><button type="button">Login</button> </li>
+        <li><button id="login" type="button">Login</button> </li>
         <li>Become a Seller</li>
         <li>
             <select name="cars" id="cars">
@@ -133,7 +133,7 @@
 
 
 <Script>
- 
+ var login=document.getElementById('login');
   var cart=document.getElementById('cart');
   cart.addEventListener('click',function(){
 window.open('https://dev.na.bambora.com/docs/references/payment_APIs/v1-0-5/');
@@ -150,7 +150,9 @@ var img3=document.getElementById('img3');
 var img4=document.getElementById('img4');
 var img5=document.getElementById('img5');
 var img6=document.getElementById('img6');
-
+login.addEventListener('click',function(){
+  window.open('login.html');
+})
 img1.addEventListener('click',function(){
   window.open('shop.html');
 });
