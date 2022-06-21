@@ -37,7 +37,9 @@
             }
             img{
                 margin-bottom: 3%;
+            
             }
+
           </style>
 </head>
 <body>
@@ -57,26 +59,26 @@
             <option value="audi">Audi</option>
           </select>
         </li>
-        <li><i class="fa-solid fa-cart-shopping"></i>Cart</li>
+        <li id="cart"><i class="fa-solid fa-cart-shopping"></i>Cart</li>
     </ul>
    </header>
    <!--second layer-->
    <div style="text-align:center;align-items:center" class="items">
     <div class="row">
         <div class="col d-block">
-            <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
-            <label>Top Offers</label>
+            <img id="img1" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
+            <label id="lab1">Top Offers</label>
         </div>
         <div class="col d-block">
-            <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100">
-            <label>Grocery</label>
+            <img id="img2"  src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100">
+            <label id="lab2">Grocery</label>
         </div>
         <div class="col d-block">
-            <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100">
-            <label>Mobiles</label>
+            <img id="img3"  src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100">
+            <label id="lab3">Mobiles</label>
         </div>
         <div class="col d-block">
-            <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100">
+            <img id="img4"  src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100">
             <select name="" id="">
                 <option value="img">img1</option>
                 <option value="img">img2</option>
@@ -84,16 +86,16 @@
             </select>
         </div>
         <div class="col d-block">
-            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
-            <label>Electronics</label>
+            <img id="img5"  src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
+            <label id="lab4">Electronics</label>
         </div>
         <div class="col d-block">
-            <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
-            <br><label>Home</label>
+            <img id="img6"  src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
+            <br><label id="lab5">Home</label>
         </div>
         <div class="col d-block">
-            <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100">
-            <label>Appliances</label>
+            <img id="img7"  src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100">
+            <label id="lab6">Appliances</label>
         </div>
     </div>
    </div>
@@ -125,6 +127,65 @@
     
 </div>                     </section>
 
+
+
+<Script>
+ 
+  var cart=document.getElementById('cart');
+  cart.addEventListener('click',function(){
+window.open('https://dev.na.bambora.com/docs/references/payment_APIs/v1-0-5/');
+  });
+  var lab1=document.getElementById('lab1');
+  var lab2=document.getElementById('lab2');
+  var lab3=document.getElementById('lab3');
+  var lab4=document.getElementById('lab4');
+  var lab5=document.getElementById('lab5');
+  var lab6=document.getElementById('lab6');
+var img1=document.getElementById('img1');
+var img2=document.getElementById('img2');
+var img3=document.getElementById('img3');
+var img4=document.getElementById('img4');
+var img5=document.getElementById('img5');
+var img6=document.getElementById('img6');
+
+img1.addEventListener('click',function(){
+  window.open('shop.html');
+});
+img2.addEventListener('click',function(){
+  window.open('shop.html');
+})
+img3.addEventListener('click',function(){
+  window.open('shop.html');
+})
+img4.addEventListener('click',function(){
+  window.open('shop.html');
+})
+img5.addEventListener('click',function(){
+  window.open('shop.html');
+})
+img6.addEventListener('click',function(){
+  window.open('shop.html');
+});
+lab1.addEventListener('click',function(){
+  window.open('shop.html');
+});
+lab2.addEventListener('click',function(){
+  window.open('shop.html');
+})
+lab3.addEventListener('click',function(){
+  window.open('shop.html');
+})
+lab4.addEventListener('click',function(){
+  window.open('shop.html');
+})
+lab5.addEventListener('click',function(){
+  window.open('shop.html');
+})
+lab6.addEventListener('click',function(){
+  window.open('shop.html');
+})
+
+  </script>
     <script src="index.js"></script>
 </body>
 </html>
